@@ -1,4 +1,4 @@
-import { Context } from 'vm';
+import { Context } from './context';
 import { Feature } from './feature';
 import { Pagination } from './pagination';
 

@@ -1,4 +1,4 @@
-import { Elevation } from '../elevation';
+import { Elevation } from './elevation';
 import { BarometricPressure } from './barometricpressure';
 import { Dewpoint } from './dewpoint';
 import { HeatIndex } from './heatindex';

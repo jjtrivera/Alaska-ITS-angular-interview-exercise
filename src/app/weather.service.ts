@@ -24,7 +24,7 @@ export class WeatherService {
   getStationList(): Observable<Root> {
     return this.httpClient
       .get<Root>(`${this.weatherURL}${this.weatherLimit}`)
-      .pipe(catchError(this.handleError<Root>('getStationList', null)));
+      .pipe(); //catchError(this.handleError<Root>('getStationList', null))
   }
 
   getObservationsForStationID(StationID: string): Observable<ObservationRoot> {
@@ -32,17 +32,14 @@ export class WeatherService {
       .get<ObservationRoot>(
         `${this.weatherURL}/${StationID}/${this.weatherObservationsURL}`
       )
-      .pipe(
-        catchError(
-          this.handleError<ObservationRoot>('getObservationsForStationID', null)
-        )
-      );
+      .pipe(); // catchError(this.handleError<ObservationRoot>('getObservationsForStationID', null))
   }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
+
+      console.error(operation); // log to console instead
 
       // Let the app keep running by returning an empty result.
       return of(result as T);

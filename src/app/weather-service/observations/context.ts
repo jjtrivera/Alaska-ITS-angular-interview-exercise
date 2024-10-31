@@ -1,12 +1,12 @@
-import { Bearing } from '../bearing';
-import { County } from '../county';
-import { Distance } from '../distance';
-import { ForecastGridData } from '../forecastgriddata';
-import { ForecastOffice } from '../forecastoffice';
-import { Geometry } from '../geometry';
-import { PublicZone } from '../publiczone';
-import { UnitCode } from '../unitcode';
-import { Value } from '../value';
+import { Bearing } from './bearing';
+import { County } from './county';
+import { Distance } from './distance';
+import { ForecastGridData } from './forecastgriddata';
+import { ForecastOffice } from './forecastoffice';
+import { Geometry } from './geometry';
+import { PublicZone } from './publiczone';
+import { UnitCode } from './unitcode';
+import { Value } from './value';
 
 export interface Context {
   '@version': string;

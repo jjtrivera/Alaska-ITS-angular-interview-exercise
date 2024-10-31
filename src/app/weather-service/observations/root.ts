@@ -1,5 +1,5 @@
-import { Context } from 'vm';
-import { Feature } from '../feature';
+import { Context } from './context';
+import { Feature } from './feature';
 
 export interface Root {
   '@context': [string, Context];

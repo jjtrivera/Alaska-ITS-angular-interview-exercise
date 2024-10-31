@@ -1,5 +1,5 @@
-import { Geometry2 } from '../geometry2';
-import { Properties } from '../properties';
+import { Geometry2 } from './geometry2';
+import { Properties } from './properties';
 
 export interface Feature {
   id: string;
