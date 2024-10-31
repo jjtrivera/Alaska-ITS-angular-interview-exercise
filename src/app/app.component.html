@@ -1,7 +1,8 @@
 <header class="header">
   <span class="header-text">Alaska Air - Angular Interview Exercise</span>
 </header>
-<div class="main">
+<router-outlet></router-outlet>
+<div class="main" *ngIf="stations">
   <p *ngFor="let feat of stations.features">
     <a
       routerLink="/station/{{ feat.properties.stationIdentifier }}/{{

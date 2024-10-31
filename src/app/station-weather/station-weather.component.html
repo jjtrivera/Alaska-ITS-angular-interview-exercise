@@ -1,14 +1,3 @@
-<header class="header">
-  <span class="header-text">Alaska Air - Angular Interview Exercise</span>
-</header>
-
 <p>Weather for: {{ stationName }}</p>
 
-{{ stationObservation }}
-
-<footer class="footer">
-  Original Repository:
-  <a href="https://github.com/Alaska-ITS/angular-interview-exercise"
-    >angular-interview-exercise</a
-  >
-</footer>
+{{ stationObservation.features[0].properties.timestamp }}
